@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/Catalogue.css">
+  <link rel="stylesheet" href="/css/Base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page-produit</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="wrapper">
+      <div class="logo"><a href="#"><img src="/myImage/Logo png.png" alt="" class=""></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="/html/Catalogue.html">Les jeux</a></li>
+        <li><a href="3E-Book.html">E-book</a></li>
+        <li><a href="4Moteur.html">Moteur de jeu</a></li>
+        <li><a href="5bureautique.html">La bureautique</a></li>
+        <li><a href="6entreprise.html">Notre entreprise</a></li>
+        <li><a href="/html/Connexion.html" class="connexion">Connexion</a></li>
+        <div>
+
+          <a class="panier" href="/html/Panier.html"><img src="/myImage/panier.png" alt=""></a>
+          <span id="panier_contenu"></span>
+        </div>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <div class="corps">
+
+    <h1 class="marge-g">Nouveauté</h1>
+
+    <div class="corps2">
+      <div class="nouveauté">
+        <div class="nouveauté-txt">
+          <h3>Titre de jeu</h3>
+          <h5>Nom de l'editeur</h5>
+          <div class="nouveauté-p">Lorem ipsum dolor sit amet consectetur. Enim integer elit amet tincidunt eget
+            vulputate commodo. Tellus
+            porttitor in in ipsum lorem. Viverra suspendisse erat facilisis malesuada sit fusce amet. Sagittis quis
+            massa viverra maecenas massa aliquam eu. </div>
+          <div class="nouveauté-detail">
+            <div class="tag">
+              <div class="tag-detail">Sand-box</div>
+              <div class="tag-detail">MMORPG</div>
+              <div class="tag-detail">Nouveauté</div>
+            </div>
+            <div class="prix-g">179,95 ttc</div>
+          </div>
+        </div>
+        <img src="/myImage/monster-hunter-wilds-1.jpg" alt="" class="nouveauté-img">
+
+      </div>
+    </div>
+    <h1 class="marge-g produit">Catalogue</h1>
+    <!-- Fais avec l'aide de chatGPT -->
+    <div id="filter-buttons" class="filter">
+      <button class="filtre-btn" onclick="afficherCartes('Tous')">Tous</button>
+      <button class="filtre-btn" onclick="afficherCartes('Système d’exploitation')">Système d’exploitation</button>
+      <button class="filtre-btn" onclick="afficherCartes('Bureautique & Utilitaires')">Bureautique &
+        Utilitaires</button>
+      <button class="filtre-btn" onclick="afficherCartes('Jeux')">Jeux</button>
+      <button class="filtre-btn" onclick="afficherCartes('Ebook')">Ebook</button>
+    </div>
+    <div id="card_container"></div>
+  </div>
+
+  <footer class="footeur">
+    <div class="footeur-top">
+      <img src="/myImage/Logo png.png" alt="">
+      <div class="footeur-langue">
+        <img class="marge2" src="/myImage/icon-fr.png" alt="" class="drapeau">
+        <h3 class="slash marge2">/</h3>
+        <img class="marge2" src="/myImage/icon-eng.png" alt="" class="drapeau">
+      </div>
+    </div>
+    <div class="footeur-colonne">
+      <div class="footeur-colonne-detail">
+        <div class="footeur-colonne-titre">
+          <h5>Ressource</h5>
+        </div>
+        <div class="cooteur-colonne-liste">
+          <li>FAQ</li>
+          <li>Pilote</li>
+          <li>Assistance</li>
+
+        </div>
+      </div>
+      <div class="footeur-colonne-detail">
+        <div class="footeur-colonne-titre">
+          <h5>youpi</h5>
+        </div>
+        <div class="cooteur-colonne-liste">
+          <li>Newsletter</li>
+          <li>Partenaires</li>
+          <li>Nous contacter</li>
+
+        </div>
+      </div>
+      <div class="footeur-colonne-detail">
+        <div class="footeur-colonne-titre">
+          <h5>Mentions légales</h5>
+        </div>
+        <div class="cooteur-colonne-liste">
+          <li>Cookie</li>
+          <li>Charte de conficentialité</li>
+          <li>Plan du site</li>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/Carte-produit.js"></script>
+</body>
+
+</html>

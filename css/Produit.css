@@ -1,0 +1,35 @@
+.product-card{
+    background-color: #232323;
+    margin-bottom: 3rem;
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    display: flex;
+    height: fit-content;
+}
+
+.data-product{
+    display: flex;
+    align-items: center;
+    
+}
+
+#product_image{
+     height: auto; 
+    width: auto; 
+    max-width: 250px; 
+    max-height: 250px;
+}
+
+#product_description{
+    font-size: 20px;
+}
+
+.inside-data{
+    padding: 1rem;
+}
+
+#product_name{
+    padding-left: 2rem;
+}

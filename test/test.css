@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Lufga";
+  src: url("Lufga.otf") format(otf);
+}
+
+body{
+    font-family: "Lufga";
+    margin: 0;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.icon-cart{
+    position: relative;
+}
+
+.icon-cart span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #40414d;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+}
+
+.item img{
+    width: 90%;
+
+    filter: drop-shadow(0 15px 10px #0009);
+}
+
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item{
+    background-color: #6d6d6d;
+    padding: 20px;
+    
+    color: rgb(233, 233, 233);
+}
+
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: larger;
+}
+
+.listProduct .item .price{
+    letter-spacing: 2px;
+    font-size: small;
+}
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.cartTab{
+width:400px;
+background-color: #353432;
+color: aliceblue;
+position: fixed;
+inset: 0 0 0 auto;
+display: grid;
+grid-template-rows: 70px 1fr 70px ;
+}
