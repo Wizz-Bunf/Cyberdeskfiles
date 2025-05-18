@@ -85,7 +85,7 @@ function current_user(user) {
   console.log(user, 'grgrgr');
 }
 
-// Écouteur sur le formulaire dynamiquement (délégué)
+
 document.addEventListener('submit', function (e) {
   if (e.target.id === 'subscribe') {
     e.preventDefault();
@@ -106,7 +106,6 @@ document.addEventListener('submit', function (e) {
   }
 });
 
-// Initialisation des utilisateurs au cas où
 get_users();
 
 
@@ -150,36 +149,36 @@ function get_user_by_email(email) {
 }
 
 function getQueryParam(param) {
-  const urlParams = new URLSearchParams(window.location.search);  // Crée un objet URLSearchParams pour analyser l'URL
-  return urlParams.get(param);  // Retourne la valeur du paramètre passé en argument (ex: 'user')
+  const urlParams = new URLSearchParams(window.location.search);  
+  return urlParams.get(param);  
 }
 
-// Fonction pour afficher les informations de l'utilisateur sur la page de profil
+
 function displayUserProfile() {
-  const userEmail = getQueryParam('user');  // Récupérer l'email de l'utilisateur depuis l'URL
+  const userEmail = getQueryParam('user'); 
 
   if (userEmail) {
-    // Chercher l'utilisateur dans localStorage
+
     const all_users = JSON.parse(localStorage.getItem('users')) || [];
     const user = all_users.find(user => user.Email === userEmail);
 
     if (user) {
-      // Si l'utilisateur existe, afficher son nom et son email
+
       document.getElementById('user-name').textContent = user.name;
       document.getElementById('Email').textContent = user.Email;
     } else {
-      // Si l'utilisateur n'est pas trouvé, afficher un message d'erreur
+ 
       document.getElementById('user-name').textContent = 'Utilisateur non trouvé';
       document.getElementById('user-email').textContent = '';
     }
   } else {
-    // Si l'email n'est pas dans l'URL, afficher un message d'erreur
+
     document.getElementById('user-name').textContent = 'Utilisateur non connecté';
     document.getElementById('user-email').textContent = '';
   }
 }
 
-// Appeler la fonction pour afficher le profil de l'utilisateur
+
 displayUserProfile();
 
 console.log(window.location.search);
