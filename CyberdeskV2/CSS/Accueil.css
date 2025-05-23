@@ -1,0 +1,48 @@
+.Banniere{
+    background-image: url(/CyberdeskV2/img/Baldur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banniereItem{
+margin: 20px;
+padding-right: 100px;
+width: 40%;
+background-color: transparent;
+background-color: rgba(0, 0, 0, 0.52);
+backdrop-filter: blur(10px);
+padding: 30px;
+}
+
+.carteCategory{
+    display: flex;
+    justify-content: center;
+}
+
+#CarteCategory{
+    flex: 0 2 calc(90.33% - 50px);
+    justify-content: center;
+    display: flex;
+    grid-column: 2000;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: rgb(227, 227, 227);
+}
+
+.carteCadre{
+    background-color: #484848;
+    width: 300px;
+    justify-items: center;
+    column-count: 2;
+    column-width: 400px;
+}
+
+.categoryPic{
+    width: 100%;
+
+}

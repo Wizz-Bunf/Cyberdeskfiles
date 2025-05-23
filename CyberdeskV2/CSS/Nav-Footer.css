@@ -1,0 +1,276 @@
+/* Liste police */
+@font-face {
+    font-family: "Lufga";
+    src: url("Lufga.otf") format(otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lufga";
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(33, 33, 33);
+    ;
+}
+
+button{
+    border: none;
+    padding: 4px;
+}
+button:hover{
+    background-color:#1C9C47;
+    color: #ecece1;
+}
+
+/* Header */
+
+header{
+    background: #484848;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #484848;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    
+}
+
+.logo img {
+    width: 200px;
+    padding-left: 2rem;
+}
+
+.menuLink {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    align-items: center;
+    background: #484848;
+    width: 100%;
+    justify-content: flex-end;
+
+}
+
+.menuLink a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    align-items: center;
+    color: #ecece1;
+
+
+}
+
+.contact {
+    background:none;
+    border: none;
+    color: #ecece1;
+    padding: 10px;
+    
+    font-size: larger;
+}
+
+button.contact {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.contact:hover {
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: #1C9C47;
+}
+
+.menuLink a:hover {
+    transition: 0.2s ease-in;
+    color:#2bdc66
+    
+
+
+}
+
+.mobileMenu {
+    display: none;
+    padding-right: 2rem;
+}
+
+.panierIcon{
+    width: 35px;
+    padding-top: 3px;
+}
+.panierIcon:hover{
+    width: 35px;
+    padding-top: 3px;
+}
+
+
+/* Footer */
+
+#FooterBase {
+    
+    bottom: 0;
+    width: 100%;
+    background-color: #484848;
+}
+
+
+#Footer {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #ecece1;
+    padding: 10px;
+    margin-top: 10px;
+
+
+    bottom: 0;
+}
+
+#Footer a {
+    text-decoration: none;
+    color: #ecece1;
+    font-size: larger;
+}
+
+#Footer a:hover{
+     transition: 0.2s ease-in;
+    color: #2bdc66;
+    
+}
+
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: larger;
+}
+
+.crédit {
+    display: flex;
+    justify-content: flex-end;
+    color: #ecece1;
+    padding-right: 2rem;
+    padding-top: 10px;
+}
+
+#Footer img {
+    width: 200px;
+    align-items: center;
+    justify-items: center;
+}
+
+.footerItemC2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+@media (max-width: 1230px) {
+    .menuLink {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .menuLink {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        color: #ecece1;
+
+
+        width: 200px;
+        max-height: 0;
+        overflow: hidden;
+
+    }
+
+
+    .menuLink.open {
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        right: 0;
+        top: 70px;
+        background-color: #1C9C47;
+        color: #ecece1;
+        z-index: 10000;
+
+        width: 100%;
+
+        max-height: 700px;
+        overflow: hidden;
+        margin-right: 0;
+    }
+
+    .menuLink.open a {
+        color: #ecece1;
+        
+        padding: 20px;
+
+    }
+
+    #menuList {
+        margin-right: 0%;
+        font-size: larger;
+        width: 100%;
+
+    }
+
+    .contact {
+        margin-left: 0;
+        background-color: #1C9C47;
+        font-size: larger;
+
+    }
+
+    .panierIcon{
+    width: 60px;
+    padding: 5px;
+    
+    background-color: #484848;
+    
+}
+
+    #Footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+
+
+   .crédit {
+        
+        justify-content: center;
+        color: #ecece1;
+        padding-right: 0%;
+
+    }
+
+    .footerItem{
+        align-items: center;
+    }
+
+}

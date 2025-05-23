@@ -1,0 +1,135 @@
+.produit {
+    margin-top: 3rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.filtre-btn {
+    background-color: #1f1f1f;
+    border: none;
+    color: #dddddd;
+    margin: 1rem;
+    gap: 20px;
+}
+
+.filtre-btn:active {
+    background-color: #1fb852;
+}
+
+#card_container {
+    top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* Espace entre les cartes */
+    justify-content: center;
+    /* Centrage optionnel */
+    padding: 20px;
+    max-width: 1000px;
+    /* largeur max pour contenir 3 cartes */
+    margin: 0 auto;
+    /* centrer le container */
+    margin-bottom: 8rem;
+}
+
+.short_desc {
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    padding-top: 10px;
+
+}
+
+.category{
+    padding-top: 10px;
+    color: #1fb852;
+}
+
+.card {
+  flex: 0 1 calc(33.33% - 40px);
+  /* 3 cartes max par ligne avec le gap pris en compte */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #484848;
+    text-align: center;
+    
+    color: #e0e0e0;
+    opacity: 0.85;
+    
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card h2{
+    font-size: 20px;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card a {
+    text-decoration: none;
+    color: #e8e8e8;
+}
+
+.card button{
+    border: none;
+    background-color: #dddddd;
+    padding: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card button:hover{
+    background-color: #1fb852;
+    color: #dddddd;
+}
+
+.image {
+    height: 200px;
+    padding-top: 10px;
+}
+
+.cadreNouv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px;
+    margin-bottom: 60px;
+}
+
+.catalogueNouv{
+    display: flex;
+    margin-top: 30px;
+    background-color:#484848;
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    color: #dddddd;
+}
+
+.catalogueNouv img{
+    width: 100%;
+}
+
+.nouvTxt{
+    padding: 20px;
+}
+.nouvTxt p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
