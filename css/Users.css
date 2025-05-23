@@ -1,0 +1,19 @@
+.profile-cadre {
+  background-color: #1f1f1f;
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+}
+
+.user-data {
+  margin-left: 2rem;
+  width: 50%;
+}
+
+.user-panier {
+  width: 50%;
+  background-color: #404040;
+  margin: 1rem;
+}
+
+/*# sourceMappingURL=profile.css.map */

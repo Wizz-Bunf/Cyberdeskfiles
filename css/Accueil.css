@@ -1,0 +1,267 @@
+.padding {
+  padding-top: 2rem;
+}
+
+.marge-g {
+  padding-left: 8rem;
+}
+
+@font-face {
+  font-family: "Unageo";
+  src: url("Unageo-regular.otf") format(otf);
+}
+@font-face {
+  font-family: "Unageo";
+  src: url("Unageo-regular.otf") format(otf);
+}
+@font-face {
+  font-family: "Designer";
+  src: url("Designer.otf") format(otf);
+}
+body {
+  background-color: #404040;
+  color: #dddddd;
+  width: 100%;
+  font-family: "Unageo" !important;
+}
+
+a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.btn-p {
+  border-style: solid;
+  border-inline: 4px;
+  background-color: #1f1f1f;
+  border-color: #dddddd;
+  color: #dddddd;
+  margin-top: 1rem;
+}
+
+.corps2 {
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+.banniere {
+  background-image: url(/myImage/baldurs-gate-3-digital-deluxe-edition-ak-2560x1440.jpg);
+  height: auto;
+  display: flex;
+  background-size: auto;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: end;
+  width: 100%;
+  height: 50%;
+}
+
+.banniere-txt {
+  width: 50%;
+  background-color: #1f1f1f;
+  height: 100%;
+  padding: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.banniere-txt-detail {
+  padding: 2rem;
+}
+
+h1 {
+  font-family: "Designer";
+  font-size: 30px;
+  color: #1fb852;
+}
+
+h3 {
+  font-family: "Designer";
+  font-size: 20px;
+  color: #1fb852;
+}
+
+.banniere-txt-paragraphe {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+}
+
+.banniere-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banniere-btna {
+  justify-items: center;
+  justify-content: center;
+}
+
+.carte-ctg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carte {
+  width: 30%;
+  background-color: #1f1f1f;
+  margin: 1rem;
+  height: auto;
+}
+
+#carte2 {
+  width: 30%;
+  background-color: #1f1f1f;
+  margin: 1rem;
+}
+
+.carte-image {
+  width: 100%;
+  height: auto;
+}
+
+.carte-txt {
+  padding: 1rem;
+}
+
+.carte-txt-p {
+  height: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+}
+
+.position-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+}
+
+.carte-btn {
+  border: none;
+  background: none;
+  color: #1fb852;
+  justify-items: end;
+  align-content: end;
+}
+
+.bandeaux {
+  margin-top: 2rem;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1fb852;
+  width: 100%;
+}
+
+.bandeaux-in {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+}
+
+.bandeaux-in-icon {
+  width: 50px;
+}
+
+.top-corps {
+  display: flex;
+  justify-content: center;
+}
+
+#carte-top {
+  width: 25%;
+  margin: 1rem;
+  background-color: #1f1f1f;
+}
+
+#carte-top2 {
+  width: 25%;
+  margin: 1rem;
+  background-color: #1f1f1f;
+}
+
+#carte-top3 {
+  width: 25%;
+  margin: 1rem;
+  background-color: #1f1f1f;
+}
+
+.top-image-1 {
+  width: 100%;
+}
+
+.top {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-carte {
+  width: 50%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #1f1f1f;
+}
+
+.top-txt {
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  .banniere {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banniere-txt {
+    padding: 0.9rem;
+  }
+  .banniere-txt-detail {
+    padding: 0rem;
+  }
+  h1 {
+    font-size: 14px;
+    overflow: visible;
+  }
+  .banniere-txt-paragraphe {
+    font-size: 12px;
+    width: 150px;
+    margin-top: 10px;
+  }
+  .corps2 {
+    margin-top: 10%;
+    flex-direction: column;
+  }
+  #carte {
+    width: 80%;
+  }
+  #carte2 {
+    width: 80%;
+  }
+  .carte-image {
+    width: 100%;
+    height: auto;
+  }
+  .btn-p {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,118 @@
+input {
+  margin-bottom: 1.3rem;
+}
+
+.corps-form {
+  display: flex;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 3rem;
+}
+
+.formulaire {
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  width: 100%;
+}
+
+input:active {
+  border-color: #1fb852;
+}
+
+button {
+  border-width: 0ch;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  color: #dddddd;
+  background-color: #1fb852;
+}
+
+#popup-content {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: #404040;
+  justify-items: center;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.inscription:active {
+  color: #1fb852;
+}
+
+.inscription:hover {
+  color: #1fb852;
+}
+
+.form2 {
+  align-items: center;
+  justify-items: center;
+}
+
+#subscribe {
+  justify-items: center;
+  border: none;
+}
+
+.compte {
+  border: none;
+  background-color: #404040;
+  font-size: larger;
+  margin-top: 1rem;
+  color: #dddddd;
+}
+
+.compte:hover {
+  color: #1fb852;
+}
+
+.close {
+  background-color: #404040;
+  border: none;
+  color: #1fb852;
+}
+
+.titre-inscr {
+  color: #1fb852;
+  font-family: "Designer";
+  padding-bottom: 1rem;
+}
+
+.formulaireE {
+  width: 100%;
+  justify-items: center;
+}
+
+input {
+  width: 100%;
+}
+
+/*# sourceMappingURL=connexion.css.map */

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.corps {
+  padding-top: 2rem;
+}
+
+.nouveauté {
+  display: flex;
+  background-color: #1f1f1f;
+  width: 70%;
+}
+
+.nouveauté-txt {
+  padding: 2rem;
+}
+
+.nouveauté-detail {
+  display: flex;
+  color: #1fb852;
+  justify-content: space-between;
+  padding-top: 10%;
+}
+
+.nouveauté-img {
+  width: 100%;
+}
+
+.nouveauté-p {
+  width: 80%;
+  padding-top: 5%;
+}
+
+.filter {
+  justify-items: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style2.css.map */
