@@ -1,0 +1,35 @@
+[
+    {
+        "id":"Catégorie1",
+        "name":"Jeux",
+        "image":"jeux.jpg",
+        "link": "Jeux.html"
+        
+
+
+    },
+    {
+        "id":"Catégorie2",
+        "name": "E-books",
+        "image":"jeux.jpg",
+        "link": "E-book.html"
+
+
+    },
+    {
+        "id":"Catégorie3",
+        "name": "Systéme d'exploitation",
+        "image":"jeux.jpg",
+        "link": "Exploit.html"
+
+
+    },
+    {
+        "id":"Catégorie4",
+        "name": "Bureautique et utilitaire",
+        "image":"jeux.jpg",
+        "link": "Bureautique.html"
+
+
+    }
+]

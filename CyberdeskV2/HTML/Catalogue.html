@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/CyberdeskV2/CSS/Accueil.css">
+    <link rel="stylesheet" href="/CyberdeskV2/CSS/Nav-Footer.css">
+    <link rel="stylesheet" href="/CyberdeskV2/CSS/Catalogue.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Header"></div>
+    <div class="cadreNouv">
+
+        <div class="catalogueNouv">
+            <div class="nouvTxt">
+                <h2>Super produit</h2>
+                <p> sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                    est, qui dolorem ipsum quia dolor sit amet</p>
+                <a href="/CyberdeskV2/html/detailProduit.html?id=24"><button>Voir en détail</button></a>
+            </div>
+            <img src="/CyberdeskV2/img/Dragonage.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="filter-buttons" class="filter">
+        <button id="Btn-Tous" onclick="afficherCartes('Tous')">Tous</button>
+        <button id="Btn-SE" onclick="afficherCartes('Système d’exploitation')">Système d’exploitation</button>
+        <button id="Btn-BU" onclick="afficherCartes('Bureautique & Utilitaires')">Bureautique & Utilitaires</button>
+        <button id="Btn-JV" onclick="afficherCartes('Jeux')">Jeux</button>
+        <button id="Btn-EB" onclick="afficherCartes('Ebook')">Ebook</button>
+    </div>
+    <div id="card_container"></div>
+
+
+    <div id="FooterBase"></div>
+
+    <script src="/CyberdeskV2/JS/catalogueProduit.js"></script>
+    <script src="/CyberdeskV2/JS/Nav-Footer.js"></script>
+
+</body>
+
+</html>
