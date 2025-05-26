@@ -1,0 +1,33 @@
+.profile-cadre {
+  background-color: #f4f4f4;
+  margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+}
+
+.user-data {
+  margin-left: 2rem;
+  width: 50%;
+}
+
+.user-panier {
+  width: 50%;
+  background-color: #404040;
+  margin: 1rem;
+}
+
+.profilUser{
+  background-color:#484848 ;
+  margin: 50px;
+  color: #f4f4f4;
+  padding: 30px;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profilUser h1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}

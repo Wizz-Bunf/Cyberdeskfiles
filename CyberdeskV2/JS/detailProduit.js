@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('product_description').textContent = product.description;
       document.getElementById('product_category').textContent = product.category;
       document.getElementById('product_price').textContent = `${product.sale_price} €`;
+      
     })
     .catch(error => console.error('Erreur lors du chargement des données :', error));
 });

@@ -1,0 +1,18 @@
+
+    #contenu-panier{
+        
+        justify-items: center;
+    }
+
+    .contenuPanier{
+        display: flex;
+        
+    }
+
+    .contenu{
+        background-color: #484848;
+        margin: 40px;
+        color: aliceblue;
+        padding: 20px;
+        justify-content: center;
+    }

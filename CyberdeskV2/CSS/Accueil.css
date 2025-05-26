@@ -15,6 +15,7 @@ background-color: transparent;
 background-color: rgba(0, 0, 0, 0.52);
 backdrop-filter: blur(10px);
 padding: 30px;
+color: aliceblue;
 }
 
 .carteCategory{

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/CyberdeskV2/CSS/Accueil.css">
+    <link rel="stylesheet" href="/CyberdeskV2/CSS/Nav-Footer.css">
+    <link rel="stylesheet" href="/CyberdeskV2/CSS/Connect.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Header"></div>
+
+    <div class="corps-form">
+
+        <!-- Formulaire Particulier -->
+        <form action="#" class="mt-5 p-3" id="part_form">
+            <label class="form-label" for="part_login_email">Login</label>
+            <input class="form-control" type="text" id="part_login_email">
+
+            <label class="form-label" for="part_password">Password</label>
+            <input class="form-control" type="password" id="part_password">
+
+            <button class="btn btn-primary mt-2" type="submit" id="part_login">Connexion</button>
+        </form>
+        <div>Pas encore de compte? <b><a href="#" onclick="popup('part')" class="inscription">S'inscrire</a></b>
+        </div>
+
+
+
+        <!-- Formulaire Professionnel -->
+        <form action="#" class="mt-5 p-3" id="pro_form">
+            <label class="form-label" for="pro_login_email">Login</label>
+            <input class="form-control" type="text" id="pro_login_email">
+
+            <label class="form-label" for="pro_password">Password</label>
+            <input class="form-control" type="password" id="pro_password">
+
+            <label class="form-label" for="pro_siret">SIRET: </label>
+            <input class="form-control" type="text" id="pro_siret">
+
+            <button class="btn btn-primary mt-2" type="submit" id="pro_login">Connexion</button>
+        </form>
+
+
+
+        <div>Pas encore de compte? <b><a href="#" onclick="popup('pro')" class="inscription">S'inscrire</a></b>
+        </div>
+        <div><b><a href="#">Mot de passe oublié?</a></b></div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup-content">
+        <div class="titre-inscr">Créer un compte</div>
+
+        <form id="subscribe"></form>
+        <button onclick="popupClose()" class="close">Fermer</button>
+    </div>
+
+    </div>
+
+    <div id="FooterBase"></div>
+    <script src="/CyberdeskV2/JS/Nav-Footer.js"></script>
+    <script src="/CyberdeskV2/JS/Utilisateurs.js"></script>
+
+</body>
+
+</html>
