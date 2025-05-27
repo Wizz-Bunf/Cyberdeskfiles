@@ -2,7 +2,7 @@ function navbar() {
   const container = document.getElementById("Header");
   container.innerHTML = "";
 
-  // Récupérer le type d'utilisateur depuis sessionStorage
+  // Recupt type d'utilisateur
   const user = JSON.parse(sessionStorage.getItem('user'));
   const userType = user ? user.type : null;
 
@@ -38,7 +38,7 @@ function navbar() {
 
   container.innerHTML += navbarHTML;
 
-  // Ajouter l'événement de déconnexion
+  // Deconnexion
   if (document.getElementById('logout')) {
     document.getElementById('logout').addEventListener('click', function () {
       sessionStorage.removeItem('user');
@@ -59,7 +59,7 @@ function menuBurger() {
 
 
 
-
+//Footer
 function navbarBottom(Footer) {
     const container = document.getElementById("FooterBase");
     container.innerHTML = "";

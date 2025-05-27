@@ -4,7 +4,7 @@ function _init_() {
 }
 _init_();
 
-// Charge les données JSON et affiche les cartes
+// Afficher les cartes depuis JSON
 function loadJSON() {
   fetch('/CyberdeskV2/JS/data.json')
     .then(response => response.json())
@@ -18,7 +18,7 @@ function loadJSON() {
     });
 }
 
-// Active le bouton "Tous" par défaut
+// Tous = defaut
 document.addEventListener('DOMContentLoaded', () => {
   const btnTous = document.getElementById('btn-tous');
   if (btnTous) {
@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
   afficherPanier(); // utilisable sur Panier.html et Utilisateur.html
 });
 
-// Récupère la catégorie dans l’URL
+
 function getCategorieDepuisURL() {
   const params = new URLSearchParams(window.location.search);
   return params.get('categorie');
 }
 
-// Affiche les cartes produits filtrées par catégorie
+//Categorie des cartes
 function afficherCartes(categorie) {
   const container = document.getElementById("card_container");
   if (!container || !window.allData) return;
@@ -69,7 +69,7 @@ function afficherCartes(categorie) {
     container.innerHTML += carteHTML;
   });
 
-  // Met à jour l’état actif des boutons de filtre
+//Filtre
   const boutons = document.querySelectorAll('#filter-buttons button');
   boutons.forEach(btn => {
     if (btn.textContent === categorie) {
@@ -80,18 +80,9 @@ function afficherCartes(categorie) {
   });
 }
 
-// Limite les boutons pour les utilisateurs "part"
-function limit_part() {
-  const currentUser = JSON.parse(sessionStorage.getItem("current_user"));
-  if (currentUser && currentUser.type === "part") {
-    const btnSE = document.getElementById("Btn-SE");
-    const btnBU = document.getElementById("Btn-BU");
-    if (btnSE) btnSE.style.display = "none";
-    if (btnBU) btnBU.style.display = "none";
-  }
-}
 
-// Ajoute un produit au panier
+
+// Panier!
 function ajouterAuPanier(idProduit) {
   if (!window.allData) {
     alert("Données produits non disponibles !");
@@ -118,7 +109,7 @@ function ajouterAuPanier(idProduit) {
   alert(`"${produit.name}" a été ajouté au panier.`);
 }
 
-// Affiche le contenu du panier (utilisable sur plusieurs pages)
+// Contenu panier
 function afficherPanier(containerId = "contenu-panier") {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -145,7 +136,7 @@ function afficherPanier(containerId = "contenu-panier") {
   }).join('') + `<h3>Total : ${total.toFixed(2)} €</h3>`;
 }
 
-// Vider le panier (à appeler dans un bouton si nécessaire)
+
 function viderPanier() {
   localStorage.removeItem("panier");
   location.reload();
